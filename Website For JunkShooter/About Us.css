@@ -1,0 +1,354 @@
+*{
+box-sizing: border-box;
+list-style: none;
+padding: 0;
+margin: 0;
+text-decoration: none;
+            }
+
+body, html {
+height: 100%;
+margin: 0;
+color: black;
+background-color: orange;
+}
+
+/*----parallax effec-----*/
+
+.pimg1, .pimg2, .pimg3 {
+position: relative;
+opacity: 0.9;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+    
+background-attachment: fixed;
+
+}
+
+
+.pimg1 {
+background-image: url(background/junkshootermenu.png);
+min-height: 90%;
+}
+
+.pimg2 {
+background-image: url(background/4.png);
+min-height: 400px;
+}
+
+.pimg3 {
+background-image: url(background/1.png);
+min-height: 400px;
+}
+
+
+section.content {
+text-align: center;
+padding: 100px;
+background-color: orange;
+border: 3px solid black;
+}
+
+
+h3 {
+margin-bottom: 50px;
+font-size: 40px;
+}
+
+/*----parallax effect-----*/
+
+
+
+
+/*-----NAVBAR EFFECT --------*/
+.navbar {
+            font-size: 18px;
+            background-color: orange;
+            padding-bottom: 10px;
+        }
+
+        .main-nav {
+            list-style-type: none;
+            display: none;
+        }
+
+        .nav-links,
+        .logo {
+            text-decoration: none;
+            color: white;
+            border: 3px solid black;
+            background-color: black;
+            }
+
+        .main-nav .li {
+            text-align: center;
+            margin: 15px auto;
+        }
+
+        .logo {
+            display: inline-block;
+            font-size: 22px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        .navbar-toggle {
+            position: absolute;
+            top: 30px;
+            bottom: 10px;
+            right: 20px;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 24px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        @media screen and (min-width: 768px) {
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 0;
+                height: 70px;
+                align-items: center;
+            }
+
+            .main-nav {
+                display: flex;
+                margin-right: 30px;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            .main-nav .li {
+                margin: 0;
+            }
+
+            .nav-links {
+                margin-left: 40px;
+            }
+
+            .logo {
+                margin-top: 0;
+            }
+
+            .navbar-toggle {
+                display: none;
+                margin-top: 10px;
+         }
+
+            .logo:hover,
+            .nav-links:hover {
+                color: white;
+            }
+        }
+.h2 {
+font-size: 20px;
+color:black;
+}
+
+
+
+.border {
+height: 2px;
+width: 40px;
+background: #ff9800;
+}
+
+/*-----NAVBAR EFFECT --------*/
+
+
+/*------- My Team     ----------*/
+
+.h3 {
+margin-bottom: 50px;
+font-size: 40px;
+    
+    
+}
+.h8 {
+border: 3px solid black;
+background-color: orange;
+color: black;
+border-radius: 25px;
+font-family: sans-serif;
+font-size: 25px;
+    
+}
+
+
+.h5 {
+background: black;
+color: white;
+margin-bottom: 2px;
+border-radius: 8px;
+font-size: 23px;
+}
+
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 3px solid black;
+    padding: 10px;
+}
+
+.container {
+  padding: 0px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: white;
+   background-color: black;
+    font-size: 25px;
+    border-radius: 23px;
+}
+
+
+
+
+/*------ My Team End ---------*/
+
+/*-----FOOTER --------*/
+
+
+.footer {
+width: 100%;
+background: black;
+display: block;    
+}
+
+.inner-footer {
+width: 95%;
+margin: auto;
+padding: 30px 10px;
+display: flex;
+flex-wrap: wrap;
+box-sizing: border-box;
+justify-content: center;
+}
+
+.footer-items {
+width: 25%;
+padding: 10px 20px;
+box-sizing: border-box;    
+}
+
+h1 {
+padding: 10px 0;
+font-size: 25px;
+color: #fff;
+text-transform: uppercase;
+}
+
+.footer-items p {
+color: white;
+font-size: 16px;
+text-align: justify;
+line-height: 25px;
+}
+
+h2 {
+margin: 10px 0;
+color: white;
+font-size: 16px;
+font-weight: lighter;
+text-transform: uppercase;
+}
+
+ul {
+list-style: none;
+color: white;
+font-size: 15px;
+letter-spacing: 0.5px;
+} 
+
+ul a {
+text-decoration: none;
+outline: none;
+color:white;
+transition: 0.3s;
+}
+
+ul a:hover {
+color: darkorange;
+}
+
+ul li {
+margin: 20px 0;
+height: 25px;
+}
+
+li i {
+margin-right: 20xp;
+}
+
+.social-media {
+width: 100%;
+color: white;
+text-align: center;
+}
+
+.social-media a {
+text-decoration: none;
+}
+.social-media i {
+height: 20px;
+width: 20px;
+margin: 20px 5px;
+padding: 2px;
+color: white;
+border-radius: 400%;
+border: 1px solid grey;
+transition: 0.3s;    
+}
+
+.social-media a:hover {
+background-color: grey;
+}
+
+.footer-bottom {
+padding: 10px;
+background: darkorange;
+color: black;
+font-size: 12px;
+}
+
+@media screen and (max-width:1005px) {
+    .footer-items {
+        width: 50%;
+    }
+}
+
+ @media screen and (max-width:600px) {
+    .footer-items {
+        width: 100%;
+    }
+}        
+
+
+
+/*-----FOOTER --------*/
+

@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Junk Shooter</title>
+    <link rel="stylesheet" href="Website.css">
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudFlare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    
+    
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">   
+    
+    </head>
+    <body>
+        
+       <nav class="navbar">
+           <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+    <a class="logo"><img src="background/emotelogo.png" width="60px" height="60px"></a>
+           <ul class="main-nav" id="js-menu">
+       
+            <div  class="li">
+                <div class="h2"><a href="Website.html" class="nav-links"><i class="fa fa-fw fa-home"></i>Home</a></div>
+               </div>
+                
+       <div  class="li">
+           <div class="h2"><a href="About%20Us.html" class="nav-links"><i class="fa fa-fw fa-user"></i>About</a></div>
+               </div>
+               
+           </ul>
+        </nav>
+        
+        <script>
+            let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+navBarToggle.addEventListener('click', function () {
+  mainNav.classList.toggle('active');
+});
+        </script>    
+        
+    <div class="pimg1">
+        
+        </div>
+    
+        <section class="content">
+        <h3>TRAILER</h3>
+            
+            <video width="200" height="200" controls>
+  <source src="js.mp4" type="video/mp4">
+  <source src="js.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+               
+</video>
+            <div class="header3">
+        <div><img src="7.jpeg"></div>
+        <div><img src="9.jpeg"></div>
+
+            
+            </div>
+        </section>
+        
+        <div class="pimg2">
+        
+        </div>
+        
+                <section class="content">
+                    <h3>Tutorials</h3>               
+       
+        <div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="background/junkshootermenu.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="Tutorials/Tutorial%20Screenshots%202.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="Tutorials/Tutorial%20Screenshots%203.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="Tutorials/Tutorial%20Screenshots%204.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="Tutorials/Tutorial%20Screenshots%205.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="Tutorials/Tutorial%20Screenshots%206.png" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="background/junkshootermenu.png" style="width:100%" onclick="currentSlide(1)" alt="1">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Tutorials/Tutorial%20Screenshots%202.png" style="width:100%" onclick="currentSlide(2)"
+           alt="2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Tutorials/Tutorial%20Screenshots%203.png" style="width:100%" onclick="currentSlide(3)" alt="3">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Tutorials/Tutorial%20Screenshots%204.png" style="width:100%" onclick="currentSlide(4)"
+           alt="4">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Tutorials/Tutorial%20Screenshots%205.png" style="width:100%" onclick="currentSlide(5)"
+           alt="5">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="Tutorials/Tutorial%20Screenshots%206.png" style="width:100%" onclick="currentSlide(6)"
+           alt="6">
+    </div>
+  </div>
+</div>
+                    
+                    
+            
+        </section>
+        <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+     
+        
+        <div class="pimg4"></div>
+        
+        
+        <div class="pimg3">
+        
+       
+        
+            <center><h3>Platform</h3></center>
+            
+            
+            
+            <center><div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+        <div class="h7">Available On:</div>
+    </div>
+    <div class="flip-box-back">
+                <div class="h7"><img src="background/google%20play%20icon.jpg" style="width: 100%"></div>
+
+    </div>
+  </div>
+                </div></center>
+            
+        
+</div>
+        
+        
+ <div class="footer">
+        <div class="inner-footer">
+                
+            
+            <div class="footer-items">
+            <h1>Emote Company</h1>
+                <p>
+                    The Emote Company  is  built  to help kids who are not that knowledgeable about the importance and effects of healthy foods.
+                </p>
+            </div>
+            
+           
+            
+            
+            <div class="footer-items">
+            <h2>Contact Us</h2>
+            <div class="border"></div>
+            <ul>
+                <li><i class="fa fa-map-marker" aria-hidden="true">#40 Pajo St. VVEV Ph. 3 Valley Golf, Brgy. San Juan Cainta, Rizal</i></li>   
+                <li><i class="fa fa-phone" aria-hidden="true">(+63)9016248701</i></li>       
+                <li><i class="fa fa-envelope" aria-hidden="true"> emote.indev@gmail.com</i></li>        
+            </ul>
+                <div class="social-media">
+                <a href="https://m.facebook.com/Emote-Company-106345217595894/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/emotecompany/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://mobile.twitter.com/CompanyEmote"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+        Copyright &copy; Emote Company 2020. All Rights Reserved.
+        </div>
+        
+    </div>
+
+        
+    </body>
+</html>
